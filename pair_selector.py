@@ -141,7 +141,7 @@ def run_cointegration(good_tickers):
                     'zscore': zscore
                 })
 
-                out_df.to_csv(f'{SPREADS_DIR}{ticker_a}_{ticker_b}_spread_z.csv')
+                out_df.to_csv(f'{SPREADS_DIR}{ticker_a}_{ticker_b}_spread_z.csv', index=True)
 
                 pairs_results.append({
                     'pair': f'{ticker_a}-{ticker_b}',
